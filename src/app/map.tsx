@@ -1,6 +1,6 @@
 'use client';
-import { climate_risks } from '../../../climate_risk2';
-import { climate_risk } from '../../../climate_risk';
+import { climate_risks } from '../../climate_risk2';
+import { climate_risk } from '../../climate_risk';
 import * as Leaflet from 'leaflet';
 import React, { useState, useEffect, useMemo } from 'react';
 import { MapContainer, TileLayer, Marker, Tooltip } from 'react-leaflet';
