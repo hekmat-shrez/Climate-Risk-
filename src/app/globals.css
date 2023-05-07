@@ -1,0 +1,147 @@
+@import '../../node_modules/leaflet/dist/leaflet.css';
+@import 'flowbite/dist/flowbite.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body,
+:root {
+  align-items: center;
+  background-color: rgb(255, 255, 255);
+  max-width: 100%;
+}
+
+#map-graph-container {
+  display: flex;
+  background-color: rgb(41, 41, 41);
+  color: rgba(245, 245, 245, 0.404);
+  padding-top: 80px;
+  padding-bottom: 100px;
+  gap: 5%;
+  
+}
+
+#map {
+  display: flex;
+  height: 40vh;
+  width: 80vh;
+  flex-direction: column;
+  align-items: flex-end;
+  flex: 1;
+}
+
+#selectYear {
+  position: absolute;
+  z-index: 1000;
+  width: 6%;
+  margin-top: 5px;
+}
+
+#map-legend {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  color: rgba(105, 105, 105, 0.788);
+  justify-items: right;
+  font-size: 12px;
+  z-index: 1001;
+  background-color: rgba(0, 0, 0, 0.034);
+  padding: 10px;
+  margin-top: 2%;
+  border: rgba(44, 44, 44, 0.507) 1px solid;
+  border-radius: 15px;
+  margin-right: 4px;
+  border-color: rgba(245, 245, 245, 0.342);
+}
+#map-legend span {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+#map-legend span:nth-of-type(1)::before {
+  content: '';
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  margin-right: 5px;
+  background-color: blue;
+}
+
+#map-legend span:nth-of-type(2)::before {
+  content: '';
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  margin-right: 5px;
+  background-color: yellow;
+}
+
+#map-legend span:nth-of-type(3)::before {
+  content: '';
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  margin-right: 5px;
+  background-color: red;
+}
+
+#map select {
+  margin-right: 20px;
+  background-color: rgba(0, 0, 0, 0.034);
+  color: rgba(27, 27, 27, 0.788);
+}
+
+#t {
+  z-index: 1111;
+  color: brown;
+  background-color: white;
+}
+
+#table table {
+  width: 90%;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  border: solid 1px black;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+th {
+  text-align: left;
+  border-bottom: 1px solid black;
+}
+
+#pagination {
+  border-top-right-radius: 3%;
+  margin-left: 5%;
+  margin-bottom: 5%;
+  align-items: right;
+}
+
+.filters {
+  display: flex;
+  gap: 5%;
+  margin-left: 5%;
+  padding-top: 5%;
+}
+
+#filter {
+  margin-top: 15px;
+}
+
+#chartContainer {
+  margin-right:5%;
+  overflow: hidden;
+}
+
+#graph { 
+  position: relative;
+  height: 40vh;
+  width: 80vh;
+  overflow: hidden;
+  flex: 1;
+
+}
